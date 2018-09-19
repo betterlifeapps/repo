@@ -1,0 +1,20 @@
+<ion-view title="DC" id="page3" style="background-color:#AEA4B8;">
+  <ion-content padding="true" style="background: url(img/qZz2UqgeQzSlq8SP5VQY_170573.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <form id="dC-form2" class="list">
+      <label class="item item-input transparent4" id="dC-search2">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="" ng-model="data.search" ng-change="search()">
+      </label>
+    </form>
+    <ion-list id="dC-list10">
+      <ion-item class="item-thumbnail-left transparent4" id="dC-list-item16" ui-sref="tabsController.dCMOVIE({&quot;dckey&quot;:&quot;&quot;+dc.key+&quot;&quot;})" ng-repeat="dc in narrowed_dcs">
+        <img src="{{dc.preview}}">
+        <h2>{{dc.name}}</h2>
+        <p></p>
+        <p> Release: {{dc.release}} </p>
+        <p id="{{dc.code}}"></p>
+        <p></p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
